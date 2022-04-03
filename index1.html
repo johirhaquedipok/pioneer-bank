@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="p-5">
+    <header class="grid grid-cols-1">
+      <div>
+        <h1 class="text-7xl">
+          Bank for <span class="text-green-500">Vanilla JS</span>
+        </h1>
+      </div>
+    </header>
+    <main>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 m-5">
+        <div class="border border-slate-300 rounded shadow-sm p-4">
+          <p>$<span id="deposited">00</span></p>
+          <p>Deposited</p>
+        </div>
+        <div class="border border-slate-300 rounded shadow-sm p-4">
+          <p>$<span id="withdrawed">00</span></p>
+          <p>Withdrawed</p>
+        </div>
+        <div class="border border-slate-300 rounded shadow-sm p-4">
+          <p>$<span id="total">00</span></p>
+          <p>Total</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div class="border border-slate-300 rounded shadow-sm p-4">
+          <h3 class="text-5xl my-5 text-center">
+            $<span id="desposit-money">00</span>
+          </h3>
+          <input
+            id="deposit-input"
+            class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
+            placeholder="Deposit your money..."
+            type="number"
+            name="deposit"
+          />
+          <button
+            id="deposit"
+            class="bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 m-5 rounded-md p-2 text-white"
+          >
+            Deposit
+          </button>
+        </div>
+        <!-- deposit-->
+        <div class="border border-slate-300 rounded shadow-sm p-4">
+          <h3 class="text-5xl my-5 text-center">
+            $<span id="withdraw-money">00</span>
+          </h3>
+          <input
+            id="withdraw-input"
+            class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
+            placeholder="Withdraw your money..."
+            type="number"
+            name="withdraw"
+          />
+          <button
+            id="withdraw"
+            class="bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 m-5 rounded-md p-2 text-white"
+          >
+            Withdraw
+          </button>
+        </div>
+        <!-- withdraw-->
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
